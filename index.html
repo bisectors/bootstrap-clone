@@ -1,0 +1,498 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-search">
+        <input type="search" placeholder="Search" />
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="32"
+              class="d-block my-1"
+              viewBox="0 0 118 94"
+              role="img"
+            >
+              <title>Bootstrap</title>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Icons</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                class="navbar-nav-svg"
+                viewBox="0 0 512 499.36"
+                role="img"
+              >
+                <title>GitHub</title>
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEUUlEQVR4nO2Za4hVVRTHfzmjNWo6TJNYqUmUlVpIRA97QJpoND3M7EFYQhEVkgSZBfaCLDMJe2kiZSEZpX0wCCv6oEVPe1Gaj2YQc/xQVlqZzozaxIL/GZaXc+6ce8++d65w/7C595y9zlp77b32WmuvDVVUUUUVZcAIYBowC3gMuBO4FKjhCEBv4B7gJ6Azof0GzAcaEnj0Am4E1gBNcQTjgTeAE0ukxBhgixvwLuBNDfpRYAnwtevfDdzkvj9eq+Z5PJcrpA+wTZ0/APWBlbgS2Cv+G4Br8pjQKcAy4JDoTdnP3bNvNjmHYUoOwcdA/0BKnAP8K75LZF5pcDmwx43JFFkL/KXnt+M+Wq7Ol4Ev9P8roDGjEse4lX6piO9HAnO1J04AFjvFXgE+04p1IbK7i4GBThl7PyqDIrPEx2y/NgOfRuDDBOfwsyf8Ry8H6dnMarXemVncXoTwo4Cd4mGOJAuW5wz+gPu1ye9Cmzr65bi5J4H/1GczcnoBws/Xdy1kx3hgKXA38KBTxJ4Pww51nJnAZLv62+XyhqUQfp++eZFwmAkc1OQ+FEfwnoRen8DA9s3zQIfoOrTc47RycXhGtPcHUuJZJ3t6EtG9Inq3G2anAW9pViJ7bQUWybMMdrSRh7krkCKt4ndtPqIGBawDKffBycDTwK8xXsQi9qfARj2b+wyBX8RvaHeEc52rtEifBjVK9GzZv3Wm55tt0hD4XfyOy0dkwWWlG8gK4OgihNXJW92szf4UcAZh0K6xJU5yv4RAsy7HHfckBmlMf3YXuDqcfXtlrqMycKHGs747wu9FOE2bfYr+Z0krQuIOZ/J5sUCEq6hMLNP4LCDmxVmKluZ+T6Xy0CJFzk1DvNLlVEnRuicw2u3fVKZ+ktvsC+UEKgGPuPNHalhw+9ttrNBH3kLRC2jWeK4o9OMx7hxhKcgclW56Ak0ax7ZiykRNThHfLPstN9ZKtp00C8bjMUqYR5tHeTFRsv8o1sRHuNKLKTVW55Fyohb4TmN4IEQAsoP9sZQfsyV/uxLRotHg8v8PyrwiI4H9kj0pBMOzlW1G1UELTKXGAGCTZL4aena2ivFBVfcsIx5SgoSyxpWgfgxY6exCX+AJFyij1panWFFM4HvdFa9Lmu8NdE4gqsVODcC31vHdC1xCiWBLPgH4yCnRrHQmK+pdKXQfcBmBMVSHq4U5UX6PihRmbllxHrDZpUJjszB7RzdELboXadXM5Eb2ZpUqQ7jhOu25qOxpcodnZbo+ZtBt8hqrlOOEqoLU6si6w+2xBVkDXoQ6zbS/UHkfmFzAhUyac87D7p7E2jfARZQAjSpORxG1UyZn9d1bFDcKmZwLlP5/klNetWB3QzkObfUq1X8ZY3K7dUO0Qjdb89ReAF5TIbwl5q6vTbdK43rq1DlKmecapdKdKVu79phdJ1xVigidFcPk529VOXS22gzgNuBq1cQqpRZWRRVkxP/7Rn+1IUqqAwAAAABJRU5ErkJggg=="
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNklEQVR4nO2aT08UQRDFf0Zk12BEFhCPcjQY9UuooKjADcWbBi8iQa8qZ/RkQsLn0BCCRg2JGvEP6kVF5KRyMOLNBYJmTcU3SSfuLruzszO9hJdMslA13TXT1VXVrwa2sHmRAXqAW8Ak8BH4Cazpst8fJDOdM0ATniANnAfuA3+AXJnXb2AaGABSSTzATuAqsOQYtQo8Aq5rZQ7oje/Q1aT/mewG8Fj3BPd/A0b0cmLBSWDRMeAlcAFoDDHWHuAi8MoZ7zPQRRVhb2rCmfA1cCzC8TuBN87449VYnX0y3Cb4BVwGtkc9Cf/GvAJkndVui2rwdi13TlHnINXHIWBecy7IhorQ6gz4AmghPjQBTzT3orwiFNKOOz0DGogfDcBzx81C7ZkJx50s2SWFZscrLACUHWKDjR3Hnihlz2Rlk0W3kpNdkCcsOvmCYWfzl+Ri15w8UY0QGxZ1wFvZZg9VFCmVCqZ8FP9wQrYtbbQqA06E8BHbnEh6tpjiAylZ7eQrBmXjVCGFjMrq1ZAFYJyJcg1YL2Rnr570If5jRraeyie8LaGdJ3zHqGwdyyeclPA0/qNXtt7NJ/wkoZ3ifEeHbDVe4D8sS5hkXVUqWmTr93zCNQnr8R8phyfYvA+yXEOu1VrMtTbNZp+U0BhA39FXLPwGCdHIs5pOiD0SGltYKyVKd6FiLCgajQH0FRmnaNxdSGlaT2o0pq+4JBttTxfEOSkZF+vrwWpONvZvlGi+SvE4/qFbtn0ppQ0xIuU5D8mHd7JtqJQb0g7Xa4SyLxiRTfPlNIW6dFNW5FjSOAKsyKayWxnjzhsw2jLJumpBttwJM0BatFBORHISJPYuYFY2zFbSZ2xVYRa0FezvOBPfU6cdV3HDp91ZWnOzw8SzJxY0p1Xl+6MauM1xs6y4VwuHUaNO0WnFcae9UU+SdgJAToRyV4QZ21oZQZ4INnZVe++dzrIHrP1gyK8YMqqdgrIjJ1eKslu84eoMO+VMThWpldc3xTt1KGzX62pW06hPOjMOTxCUHUNJfQGREis+pSNAuZ9wrKuK7U/qAfKhUVysndruqff4w/moxn6/1/F0TLoFzxNboMbxF43HEhWF5DFZAAAAAElFTkSuQmCC"
+            /></a>
+          </li>
+          <li style="width: 1px; height: 35px; background-color: black"></li>
+          <li>
+            <a href="#" style="display: flex; align-items: center">
+              <span> v5.3 </span>
+              <i
+                style="
+                  width: 0;
+                  height: 0;
+                  margin-left: 5px;
+                  border-left: 10px solid transparent;
+                  border-right: 10px solid transparent;
+                  border-top: 10px solid black;
+                "
+              ></i>
+            </a>
+          </li>
+          <li style="width: 1px; height: 35px; background-color: black"></li>
+          <li>
+            <a href="#"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNklEQVR4nO2aT08UQRDFf0Zk12BEFhCPcjQY9UuooKjADcWbBi8iQa8qZ/RkQsLn0BCCRg2JGvEP6kVF5KRyMOLNBYJmTcU3SSfuLruzszO9hJdMslA13TXT1VXVrwa2sHmRAXqAW8Ak8BH4Cazpst8fJDOdM0ATniANnAfuA3+AXJnXb2AaGABSSTzATuAqsOQYtQo8Aq5rZQ7oje/Q1aT/mewG8Fj3BPd/A0b0cmLBSWDRMeAlcAFoDDHWHuAi8MoZ7zPQRRVhb2rCmfA1cCzC8TuBN87449VYnX0y3Cb4BVwGtkc9Cf/GvAJkndVui2rwdi13TlHnINXHIWBecy7IhorQ6gz4AmghPjQBTzT3orwiFNKOOz0DGogfDcBzx81C7ZkJx50s2SWFZscrLACUHWKDjR3Hnihlz2Rlk0W3kpNdkCcsOvmCYWfzl+Ri15w8UY0QGxZ1wFvZZg9VFCmVCqZ8FP9wQrYtbbQqA06E8BHbnEh6tpjiAylZ7eQrBmXjVCGFjMrq1ZAFYJyJcg1YL2Rnr570If5jRraeyie8LaGdJ3zHqGwdyyeclPA0/qNXtt7NJ/wkoZ3ifEeHbDVe4D8sS5hkXVUqWmTr93zCNQnr8R8phyfYvA+yXEOu1VrMtTbNZp+U0BhA39FXLPwGCdHIs5pOiD0SGltYKyVKd6FiLCgajQH0FRmnaNxdSGlaT2o0pq+4JBttTxfEOSkZF+vrwWpONvZvlGi+SvE4/qFbtn0ppQ0xIuU5D8mHd7JtqJQb0g7Xa4SyLxiRTfPlNIW6dFNW5FjSOAKsyKayWxnjzhsw2jLJumpBttwJM0BatFBORHISJPYuYFY2zFbSZ2xVYRa0FezvOBPfU6cdV3HDp91ZWnOzw8SzJxY0p1Xl+6MauM1xs6y4VwuHUaNO0WnFcae9UU+SdgJAToRyV4QZ21oZQZ4INnZVe++dzrIHrP1gyK8YMqqdgrIjJ1eKslu84eoMO+VMThWpldc3xTt1KGzX62pW06hPOjMOTxCUHUNJfQGREis+pSNAuZ9wrKuK7U/qAfKhUVysndruqff4w/moxn6/1/F0TLoFzxNboMbxF43HEhWF5DFZAAAAAElFTkSuQmCC"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+        <!-- Main - First chunk single column center  -->
+        <div class="single-column-center">
+          <p><span class="badge mr-5">New in v5.3</span> Color mode support, expanded color palette, and more!</p>
+          <p><img class="bootstrap-logo-blue" src="/bootstrap-clone/images/bootstrap-logo.png"/></p>      
+          <p><h1>Build fast, responsive sites with Bootstrap</h1></p>
+          <h3 class="lighter-color">Powerful, extensible, and feature-packed front end toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</h3>
+          <div class="main-row">
+            <div class="inline-code">
+              <span class="span-inline-code">$ npm i bootstrap@5.3.1</span>
+              <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+            </div>
+            <a href='#' class="large-button">Read the docs</a>
+          </div>
+          <ul class="horizontal-list-ul">
+            <li>Currently v5.3.1</li>
+            <li>·</li>
+            <li><a href="#">Download</a></li>
+            <li>·</li>
+            <li><a href="#">All releases</a></li>
+          </ul>
+        </div>
+        <!-- Main - Second page  -->
+        <div class="single-column-center-narrower">
+          <div class="blue-badge"> < > </div>
+          <h2>Get started any way <br> you want</h2>
+          <h4>Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the source code.</h4>
+          <p><a class="blue-a-tag">Read installation docs <img class="blue-arrow-img" src="/bootstrap-clone/images/arrow.png"/></a></p>
+        </div>
+
+        <!-- PAge2 -->
+        <div class="double-column">
+          <div class="box-wrapper">
+            <img class='icon' src="/bootstrap-clone/images/box.png"/>
+            <h3>Install via package manager</h3>
+            <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also <a class="blue-a-tag">use any demo from our Examples repo</a> to quickly jumpstart Bootstrap projects.</p>
+            <div class="inline-code">
+              <span class="span-inline-code">$ npm install bootstrap@5.3.1</span>
+              <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+            </div>
+            <div class="inline-code">
+              <span class="span-inline-code">$ gem install bootstrap -v 5.3.1</span>
+              <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+            </div>
+            <p>Read our installation docs for more info and additional package managers.</p>
+          </div>
+          <div class="box-wrapper">
+            <img class='icon' src="/bootstrap-clone/images/globe.png"/>
+            <h3>Include via CDN</h3>
+            <p>When you only need to include Bootstrap’s compiled CSS or JS, you can use <a class="blue-a-tag">jsDelivr.</a> See it in action with our simple <a class="blue-a-tag">quick start</a>, or browse the examples to jumpstart your next project. You can also choose to include Popper and our JS <a class="blue-a-tag">separately.</a></p>
+            <div class="inline-code">
+              <pre>
+                <code>
+                  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"&gt;
+                </code>
+              </pre>
+              <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+            </div>
+            <div class="inline-code">
+              <span class="span-inline-code">CANT DOOO tag!!!</span>
+              <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+            </div>
+          </div>
+        </div>
+        <div class="single-column-center-narrower">
+          <h4>Read our getting started guides</h4>
+          <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+          <div class="triple-block">
+            <div class="img-wrapper">
+              <img src="/bootstrap-clone/images/webpack.png"/>
+              <span>Webpack</span>
+            </div>
+            <div class="img-wrapper">
+              <img src="/bootstrap-clone/images/parcel.png"/>
+              <span>Parcel</span>
+            </div>
+            <div class="img-wrapper">
+              <img src="/bootstrap-clone/images/vite.png"/>
+              <span>Vite</span>
+            </div>
+        </div>      
+      </div>
+
+      <!-- Page3 -->
+      <div class="wrapper-single-column">
+        <div class="single-column-left-align">
+          <img src="/bootstrap-clone/images/page3logo.png"/>
+          <div class="h2-wrapper">
+            <h2>Customize everything with Sass</h2>
+          </div>        
+          <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.</p>
+          <p>
+          <a class=".blue-a-tag">Learn more about customizing</a>
+          <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="double-column">
+        <div class="box-wrapper">
+          <h3>Include all of Bootstrap’s Sass</h3>
+          <p>Import one stylesheet and you're off to the races with every feature of our CSS.</p>
+          <div class="inline-code">
+            <span class="span-inline-code">
+              // Variable overrides first <br>
+              $primary: #900; <br>
+              $enable-shadows: true; <br>
+              $prefix: "mo-"; <br>
+              <br>
+              // Then import Bootstrap <br>
+              @import "../node_modules/bootstrap/scss/bootstrap";</span>
+            <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+          </div>
+          <p>Learn more about our <a class='.blue-a-tag' href="#">global Sass options.</a></p>
+        </div>
+        <div class="box-wrapper">
+          <h3>Include what you need</h3>
+          <p>The easiest way to customize Bootstrap—include only the CSS you need.</p>
+          <div class="inline-code">
+            <span class="span-inline-code">
+              // Functions first <br>
+              @import "../node_modules/bootstrap/scss/functions"; <br>
+              <br>
+              // Variable overrides second<br>
+              $primary: #900;<br>
+              $enable-shadows: true;<br>
+              $prefix: "mo-";<br>
+              <br>
+              // Required Bootstrap imports<br>
+              @import "../node_modules/bootstrap/scss/variables";<br>
+              @import "../node_modules/bootstrap/scss/variables-dark";<br>
+              @import "../node_modules/bootstrap/scss/maps";<br>
+              @import "../node_modules/bootstrap/scss/mixins";<br>
+              @import "../node_modules/bootstrap/scss/root";<br>
+              <br>
+              // Optional components<br>
+              @import "../node_modules/bootstrap/scss/utilities";<br>
+              @import "../node_modules/bootstrap/scss/reboot";<br>
+              @import "../node_modules/bootstrap/scss/containers";<br>
+              @import "../node_modules/bootstrap/scss/grid";<br>
+              @import "../node_modules/bootstrap/scss/helpers";<br>
+              @import "../node_modules/bootstrap/scss/utilities/api";<br>            
+            </span>
+            <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+          </div>
+          <p>Learn more about <a class='.blue-a-tag' href="#">using Bootstrap with Sass.</a></p>
+        </div>
+      </div> 
+      
+    <!-- Fourth page -->
+    <div class="wrapper-single-column">
+      <div class="single-column-left-align">
+        <img src="/bootstrap-clone/images/4th-page{}.png"/>
+        <div class="h2-wrapper">
+          <h2>Build and extend in real-time with CSS variables</h2>
+        </div>        
+        <p>Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a :root level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.</p>
+        <p>
+        <a class=".blue-a-tag">Learn more about CSS variables</a>
+        <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="double-column">
+      <div class="box-wrapper">
+        <h3>Using CSS variables</h3>
+        <p>Use any of our global :root variables to write new styles. CSS variables use the var(--bs-variableName) syntax and can be inherited by children elements.</p>
+        <div class="inline-code">
+          <span class="span-inline-code">
+            .component {<br>
+              &nbsp color: var(--bs-gray-800);<br>
+              &nbsp background-color: var(--bs-gray-100);<br>
+              &nbsp border: 1px solid var(--bs-gray-200);<br>
+              &nbsp border-radius: .25rem;<br>
+            }<br>
+            <br>
+            .component-header {<br>
+              &nbsp color: var(--bs-purple);<br>
+            }<br>
+          </span>
+          <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+        </div>
+      </div>
+      <div class="box-wrapper">
+        <h3>Customizing via CSS variables</h3>
+        <p>Override global, component, or utility class variables to customize Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</p>
+        <div class="inline-code">
+          <span class="span-inline-code">
+            body {<br>
+              &nbsp --bs-body-font-family: var(--bs-font-monospace);<br>
+              &nbsp --bs-body-line-height: 1.4;<br>
+              &nbsp --bs-body-bg: var(--bs-gray-100);<br>
+            }<br>
+            <br>
+            .table {<br>
+              &nbsp --bs-table-color: var(--bs-gray-600);<br>
+              &nbsp --bs-table-bg: var(--bs-gray-100);<br>
+              &nbsp --bs-table-border-color: transparent;<br>
+            }<br>
+            <br>           
+          </span>
+          <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth part component api -->
+    <div class="wrapper-single-column">
+      <div class="single-column-left-align">
+        <div class="img-wrapper">
+          <img src="/bootstrap-clone/images/5thpageapi.png"/>
+          <img src="/bootstrap-clone/images/5thpage pluc sign.png"/>
+          <img src="/bootstrap-clone/images/5thpage star.png"/>
+        </div>
+        
+        <div class="h2-wrapper">
+          <h2>Components, meet the Utility API</h2>
+        </div>        
+        <p>New in Bootstrap 5, our utilities are now generated by our <a href="#">Utility API.</a> We built it as a feature-packed Sass map that can be quickly and easily customized. It's never been easier to add, remove, or modify any utility classes. Make utilities responsive, add pseudo-class variants, and give them custom names.</p>
+      </div>
+    </div>
+
+    <div class="double-column">
+      <div class="box-wrapper">
+        <h3>Quickly customize components</h3>
+        <p>Apply any of our included utility classes to our components to customize their appearance, like the navigation example below. There are hundreds of classes available—from positioning and sizing to colors and effects. Mix them with CSS variable overrides for even more control.</p>
+        <div class="wrapper-double-navbars">
+          <div class="navbar-ul-wrapper">
+            <ul class="rectangle-ul">
+              <li class="rectangle-li">Home</li>
+              <li class="rectangle-li">Profile</li>
+              <li class="rectangle-li">Contact</li>
+            </ul>
+            <ul class="rounded-ul">
+              <li><button class="rounded-button">Home</button></li>
+              <li><button class="rounded-button">Profile</button></li>
+              <li><button class="rounded-button">Contact</button></li>
+            </ul>
+          </div>
+
+        </div>
+        
+        <div class="inline-code">
+          <span class="span-inline-code">
+            'Cant do!!'
+          </span>
+          <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+        </div>
+        <p>
+          <a class=".blue-a-tag">Explore customized components</a>
+          <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+        </p>
+      </div>
+      <div class="box-wrapper">
+        <h3>Create and extend utilities</h3>
+        <p>Use Bootstrap's utility API to modify any of our included utilities or create your own custom utilities for any project. Import Bootstrap first, then use Sass map functions to modify, add, or remove utilities.</p>
+        <div class="inline-code">
+          <span class="span-inline-code">
+            @import "bootstrap/scss/bootstrap";<br>
+            <br>
+            $utilities: map-merge(<br>
+              $utilities,<br>
+              (<br>
+                &nbsp"cursor": (<br>
+                &nbsp &nbsp property: cursor,<br>
+                &nbsp &nbsp  class: cursor,<br>
+                &nbsp &nbsp  responsive: true,<br>
+                &nbsp &nbsp  values: auto pointer grab,<br>
+                &nbsp &nbsp  )<br>
+                &nbsp )<br>
+            );<br>         
+          </span>
+          <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+        </div>
+        <p>
+          <a class=".blue-a-tag">Explore utlity API</a>
+          <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Sixth page -->
+    <div class="wrapper-single-column">
+      <div class="single-column-left-align">
+        <img src="/bootstrap-clone/images/6th page.png"/>
+        <div class="h2-wrapper">
+          <h2>Powerful JavaScript plugins without jQuery</h2>
+        </div>        
+        <p>Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with data attributes in your HTML. Need more control? Include individual plugins programmatically.</p>
+        <p>
+        <a class=".blue-a-tag">Learn more about Bootstrap JavaScript</a>
+        <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="double-column">
+      <div class="box-wrapper">
+        <h3>Data attribute API</h3>
+        <p>Why write more JavaScript when you can write HTML? Nearly all of Bootstrap's JavaScript plugins feature a first-class data API, allowing you to use JavaScript just by adding data attributes.</p>
+        <div class="inline-code">
+          <span class="span-inline-code">
+            Cant do!
+          </span>
+          <button><img class='img-copy-to-clipboard' src="/bootstrap-clone/images/copy-to-clipboard.png"/></button>
+        </div>
+        <p>Learn more about <a class='.blue-a-tag' href="#">our JavaScript as modules</a> and <a class='.blue-a-tag' href="#">using the programmatic API.</a></p>
+      </div>
+      <div class="box-wrapper">
+        <h3>Comprehensive set of plugins</h3>
+        <p>Bootstrap features a dozen plugins that you can drop into any project. Drop them in all at once, or choose just the ones you need.</p>
+        <p>To do CSS GRID!!</p>        
+      </div>
+    </div>
+
+    <!--7th  Double-column and image on the right -->
+    <div class="double-column">
+      <div class="box-wrapper bigtext">
+        <div class="single-column-left-align">
+          <img src="/bootstrap-clone/images/7thcircleandsquarwe.png"/>
+          <div class="h2-wrapper">
+            <h2>Personalize it with Bootstrap Icons</h2>
+          </div>        
+          <p><a href="#">Bootstrap Icons</a> is an open source SVG icon library featuring over 1,800 glyphs, with more added every release. They're designed to work in any project, whether you use Bootstrap itself or not. Use them as SVGs or icon fonts—both options give you vector scaling and easy customization via CSS.</p>
+          <p>
+          <a class=".blue-a-tag">Get Bootstrap Icons</a>
+          <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+          </p>
+        </div>
+      </div>
+
+      <div class="box-wrapper big-image">
+        <img src="/bootstrap-clone/images/7thbootstrap-icons.png"/>
+      </div>
+    </div>
+
+    <div class="double-column">
+      <div class="box-wrapper bigtext">
+        <div class="single-column-left-align">
+          <img src="/bootstrap-clone/images/7th water.png"/>
+          <div class="h2-wrapper">
+            <h2>Make it yours with official Bootstrap Themes</h2>
+          </div>        
+          <p>Take Bootstrap to the next level with premium themes from the <a href="#">official Bootstrap Themes marketplace.</a> Themes are built on Bootstrap as their own extended frameworks, rich with new components and plugins, documentation, and powerful build tools.</p>
+          <p>
+          <a class=".blue-a-tag">Browse Bootstrap Themes</a>
+          <img class="blue-arrow" src="/bootstrap-clone/images/arrow.png"/>
+          </p>
+        </div>
+      </div>
+
+      <div class="box-wrapper big-image">
+        <img src="/bootstrap-clone/images/7th bootstrap-themes.png"/>
+      </div>
+    </div>
+    </main>
+    <footer>
+        <ul class="long-ul">
+          <h5><img src='/bootstrap-clone/images/logo-dark.png' > Bootstrap</h5>
+          <li>Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</li>
+          <li>Code licensed MIT, docs CC BY 3.0.</li>
+          <li>Currently v5.3.1.</li>
+        </ul>      
+        <ul>
+          <li class=".bold-link">Links</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Icons</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Swag Store</a></li>
+        </ul>
+        <ul>
+          <li class=".bold-link">Guides</li>
+          <li><a href="#">Getting started</a></li>
+          <li><a href="#">Starter template</a></li>
+          <li><a href="#">Webpack</a></li>
+          <li><a href="#">Parcel</a></li>
+          <li><a href="#">Vite</a></li>
+        </ul>
+        <ul>
+          <li class=".bold-link">Projects</li>
+          <li><a href="#">Bootstrap 5</a></li>
+          <li><a href="#">Bootstrap 4</a></li>
+          <li><a href="#">Icons</a></li>
+          <li><a href="#">RFS</a></li>
+          <li><a href="#">Example repo</a></li>
+        </ul>
+        <ul>
+          <li class=".bold-link">Community</li>
+          <li><a href="#">Issues</a></li>
+          <li><a href="#">Discussions</a></li>
+          <li><a href="#">Corporate sponsors</a></li>
+          <li><a href="#">Open Collective</a></li>
+          <li><a href="#">Stack Overflow</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
