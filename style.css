@@ -21,20 +21,13 @@ a{
 }
 
 /* NAV BAR */
-nav{
+header{
     background-color: rgb(80, 80, 250);
     color: white;
     position: sticky;
     top: 0;
     width: 100%;
-}
-
-.nav-search{
-    position: absolute;
-    display: block;
-    width: 100%;
-    margin: 22px 0 22px 30px;
-    text-align: center;
+    padding: 4px 0;
 }
 
 .nav-search-box {
@@ -91,6 +84,14 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    align-items: center;
+}
+
+.vertical-divider{
+    width: 1px; 
+    padding:0;
+    height: 35px;
+    background-color: white
 }
 
 .nav-menu *{
@@ -99,12 +100,11 @@ nav{
 
 .nav-menu ul{
     display: flex;
-    align-items: center;    
+    align-items: center;
+    min-width: 450px;
+    gap: 12px;    
 }
 
-.nav-menu li{
-    padding: 10px;
-}
 
 /* Main */
 
@@ -346,12 +346,11 @@ main .horizontal-list-ul *{
 .img-wrapper{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .img-wrapper img{
-    margin-right: 8px;
-    margin-left: 8px;
-    padding: 9px;
+    padding: 8px;
     height: 68px;
     width: 68px;
 }
@@ -527,6 +526,7 @@ footer{
     justify-content: center;
     width: 1000px;
     flex: 1;
+    gap: 14px;
 }
 footer .text-wrapper{
     width: 280px;
@@ -542,7 +542,6 @@ footer .text-wrapper{
 
 .footer-box{
     padding: 26px;
-    margin: 0 11px;
 }
 .footer-title{
     font-size: 24px;
